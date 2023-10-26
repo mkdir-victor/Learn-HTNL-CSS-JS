@@ -50,23 +50,66 @@ class Cadastro{
     
           td_id.innerText = this.lista[i].id;
           td_email.innerText = this.lista[i].email;
-          
+
+          // inserir a imagem de excluir e criar a açao
           let excluirimg = document.createElement('img')
-          excluirimg.src = "delete.png"
+          excluirimg.src = "img/delete.png"
           excluirimg.style.width = "20px"
           excluirimg.style.height = "20px"
-          excluirimg.style.margin = "autoA"
+          excluirimg.style.margin = "auto"
           excluirimg.setAttribute(
             "onclick",
-            "email.excluir(" + this.lista[i].id + ")"
+            "cadastro.remover(" + this.lista[i].id + ")"
           )
 
           td_acao.appendChild(excluirimg)
-    
-        }
+          
+          // inserir imagem de iditar e criar a açao
+          let editar = document.createElement('img')
+          editar.src = "img/edit.png"
+          editar.style.width = "20px"
+          editar.style.height = "20px"
+          editar.style.margin = "auto"
+          editar.setAttribute(
+            "onclick",
+            "cadastro.editar(" + this.lista[i].id + ")"
+          )
 
+          td_acao.appendChild(editar)
+        }
     }
-}
+
+    remover(id){
+        let tbody = document.getElementById("view");
+        for (let i = 0; i < this.lista.length; i++) {
+            if (this.lista[i].id == id) {
+                
+                let confirm = prompt("digite a senha do email")
+        
+                if(this.lista[i].senha === confirm){
+                
+                    this.lista.splice(i, 1);
+                    console.log(this.lista);
+                    tbody.deleteRow(i);
+                    alert("email excluido com sucesso !")  
+                }else{
+                    alert("senha incorreto")
+                }
+            }
+        }
+    }
+
+    editar(id){
+        for (let i = 0; i < this.lista.length; i++) {
+            if (this.lista[i].id == id) {
+                
+                let novo_senha = prompt("digite a nova senha")
+                this.lista[i].senha = novo_senha
+                alert("troca de senha com sucesso !")
+            }
+        }
+    }
+}    
 
 
 
