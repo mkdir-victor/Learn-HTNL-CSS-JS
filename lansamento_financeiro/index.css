@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(71, 145, 145);
+}
+
+header h1{
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+
+body{
+    background-image: url(https://wallpaperaccess.com/full/5652030.jpg);
+    background-position: 100%;
+}
+
+div{
+    float: left;
+    margin: 60px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid ;
+}
+
+div h2{
+    margin: 10px;
+    color: rgb(71, 145, 145);
+}
+
+div input{
+    margin: 20px;
+}
+
+div button{
+    margin-top:10px ;
+    margin-left:30px ;
+}
+
+#result{
+    margin-top: 10px;
+    font-size: 20px;
+}
+

@@ -1,0 +1,4 @@
+atividade de calcular o desconto no salario
+
+referencia: https://www.pontotel.com.br/desconto-no-salario/
+consideração: desconto no vale transporte é de 6%

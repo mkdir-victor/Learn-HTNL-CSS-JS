@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+}
+
+header h1{
+    text-align: center;
+    padding: 20px;
+}
+
+main{
+    border: 1px solid red;
+    width: 80% ;
+    margin: auto;
+}
+
+#divEmail{
+    border: 1px solid blue;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#divSenha{
+    border: 1px solid blue;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+#buttom{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    text-align: center;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+image{
+    width: 20px;
+}
